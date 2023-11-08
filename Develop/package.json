@@ -14,9 +14,9 @@
 
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1",
-    "axios":"",
-    "util":
+    "inquirer": "^9.2.12",
+    "axios":"1.6.1",
+    "util":"0.12.5",
 
     
   }
