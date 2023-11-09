@@ -16,7 +16,7 @@
   "dependencies": {
     "inquirer": "^9.2.12",
     "axios":"1.6.1",
-    "util":"0.12.5",
+    "util":"0.12.5"
 
     
   }

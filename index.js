@@ -1,5 +1,5 @@
 const fs = require("fs");
-const inquirer = require("inquirer");
+import inquirer from 'inquirer';
 const util = require("util");
 const generateReadme = require("./utils/generateReadme");
 const writeFileAsync = util.promisify(fs.writeFile);
