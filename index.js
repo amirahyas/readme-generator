@@ -1,7 +1,7 @@
-const fs = require("fs");
-import inquirer from 'inquirer';
-const util = require("util");
-const generateReadme = require("./utils/generateReadme");
+import fs from "fs";
+import util from "util";
+import inquirer from "inquirer";
+import generateMarkdown from "./generateReadme.js";
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
@@ -69,15 +69,19 @@ function promptUser(){
 // Function to initialize the application
 async function init() {
   try {
+
     // Ask user questions and generate responses
     const answers = await promptUser();
-    const generateContent = generateReadme(answers);
+    const generateContent = generateMarkdown(answers);
+
     // Write new README.md to the 'dist' directory
     await writeFileAsync("./Develop/dist/README.md", generateContent);
     console.log("✔️  Successfully wrote to README.md");
+
   } catch (err) {
     console.error(err);
   }
 }
+
 // Initialize the application
 init();
