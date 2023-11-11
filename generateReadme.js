@@ -1,3 +1,4 @@
+
 // Function to return a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -28,10 +29,21 @@ This project is licensed under the [${license} License](https://opensource.org/l
 }
 
 // Function to generate markdown for README
-function generateMarkdown(data) {
+async function generateMarkdown(data) {
+  const licensePrompt = await inquirer.prompt([
+    {
+      type: 'list',
+      name: 'license',
+      message: 'Choose a license:',
+      choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'None'],
+    },
+  ]);
+
+  const selectedLicense = licensePrompt.license;
+
   return `# ${data.title}
 
-${renderLicenseBadge(data.license)}
+${renderLicenseBadge(selectedLicense)}
 
 ## Description
 
@@ -54,7 +66,7 @@ ${data.installation}
 
 ${data.usage}
 
-${renderLicenseSection(data.license)}
+${renderLicenseSection(selectedLicense)}
 
 ## Contributing
 
@@ -71,7 +83,5 @@ For any questions, please contact ${data.name}:
 - GitHub: [${data.username}](https://github.com/${data.username})
 `;
 }
-
-// module.exports = generateMarkdown;
 
 export default generateMarkdown;

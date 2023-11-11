@@ -13,21 +13,21 @@ function promptUser(){
             type: "input",
             name: "projectTitle",
             message: "what is the project title?",
-            // validate property to check the user provided a value.
-            // validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+            //  validate property to check the user provided a value.
+             validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
 
         },
         {
             type: "input",
             name: "installation",
             message: "how do you install your app?",
-            // validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+             validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
 
         },
         {  type: "input",
            name: "usage",
            message: "How do you use your app?",
-        //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+           validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
            
         },
 
@@ -37,8 +37,31 @@ function promptUser(){
            message: "what license is being used",
            choices: [
             "Apache", "Academic", "GNU", "ISC","MIT","Mozilla","Open"],
-        //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+            validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+
+
         },
+        {  type: "input",
+           name: "questions",
+           message: "fix any issues",
+          validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+      },
+        // Contribution guidelines
+        {
+          type: "input",
+          name: "contributing",
+          message: "How can others contribute to your project?",
+        },
+
+    // Test instructions
+      {
+        type: "input",
+        name: "tests",
+        message: "How can others test your application?",
+        //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+
+        },
+
         {  type: "input",
            name: "Git",
            message: "Github username:",
@@ -49,16 +72,7 @@ function promptUser(){
            name: "email",
            message: "Please ente your email",
         //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
-
-
-        },
-        {  type: "input",
-           name: "questions",
-           message: "fix any issues",
-        //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
-
-
-        }
+      },
 
     
 
