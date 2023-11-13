@@ -33,7 +33,7 @@ function promptUser(){
         },
 
         // listed license
-        {  type: "list ",
+        {  type: "list",
            name: "license",
            message: "what license is being used",
            choices: [

@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
   if (license) {
     return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`;
   }
-  return '';
+
 }
 
 // Function to return the license link
