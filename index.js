@@ -2,6 +2,7 @@ import fs from "fs";
 import util from "util";
 import inquirer from "inquirer";
 import generateMarkdown from "./generateReadme.js";
+import { title } from "process";
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
@@ -11,7 +12,7 @@ function promptUser(){
 
         {
             type: "input",
-            name: "projectTitle",
+            name: "title",
             message: "what is the project title?",
             //  validate property to check the user provided a value.
              validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
@@ -58,26 +59,28 @@ function promptUser(){
         type: "input",
         name: "tests",
         message: "How can others test your application?",
-        //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+          validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
 
         },
 
         {  type: "input",
            name: "Git",
            message: "Github username:",
-        //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+         validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
 
         },
         {  type: "input",
            name: "email",
            message: "Please ente your email",
-        //    validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+        validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
       },
 
     
 
     ])
 }
+
+
 
 
 // Function to initialize the application
