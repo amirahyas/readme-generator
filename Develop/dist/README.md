@@ -1,10 +1,10 @@
-# undefined
+# Project Title
 
-[![License](https://img.shields.io/badge/License-inn-blue.svg)](https://opensource.org/licenses/inn)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-undefined
+This is a high-quality command-line application that generates a professional README.md file based on user input. It prompts users for information about their application repository and creates a well-structured README with different sections.
 
 ## Table of Contents
 
@@ -17,26 +17,35 @@ undefined
 
 ## Installation
 
-m
+To install this application, clone the repository and run the following command: 
+
 
 ## Usage
 
-nj
+After installation, navigate to the project directory and run the application by executing:
+
+
+Follow the prompts to provide information about your project, and the README will be generated automatically.
 
 ## License
 
-This project is licensed under the [inn License](https://opensource.org/licenses/inn).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
-
+To contribute to this project, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Tests
 
-kj
+To run tests, use the following command:
+
 
 ## Questions
 
-For any questions, please contact undefined:
-- Email: 
-- GitHub: [undefined](https://github.com/undefined)
+If you have any questions, feel free to reach out:
+
+- GitHub: [YourGitHubUsername](https://github.com/YourGitHubUsername)
+- Email: [your-email@example.com](mailto:your-email@example.com)
+
+
+Amirah Bullock

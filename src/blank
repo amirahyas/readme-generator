@@ -1,6 +1,3 @@
-import inquirer from 'inquirer';
-
-// Rest of your code...
 
 // Function to return a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -41,9 +38,6 @@ async function generateMarkdown(data) {
       choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'None'],
     },
   ]);
-
-  
- const selectedLicense = licensePrompt.license;
   return `# ${data.title}
 
 ${renderLicenseBadge(selectedLicense)}

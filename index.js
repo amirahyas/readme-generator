@@ -52,6 +52,8 @@ function promptUser(){
           type: "input",
           name: "contributing",
           message: "How can others contribute to your project?",
+          validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
+
         },
 
     // Test instructions
@@ -83,20 +85,27 @@ function promptUser(){
 
 
 
+
 // Function to initialize the application
 async function init() {
   try {
 
     // Ask user questions and generate responses
     const answers = await promptUser();
-    const generateContent = generateMarkdown(answers);
+    // After const answers = await promptUser();
+    console.log(answers); // Log the user answers to check if they contain all the necessary information.
+
+    // Then, pass the answers to generateMarkdown
+    const readmeContent = generateMarkdown(answers);
+
+    console.log(readmeContent);
 
     // Write new README.md to the 'dist' directory
-    await writeFileAsync("./Develop/dist/README.md", generateContent);
+    await writeFileAsync("./Develop/dist/README.md", readmeContent);
     console.log("✔️  Successfully wrote to README.md");
 
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error(error);
   }
 }
 
