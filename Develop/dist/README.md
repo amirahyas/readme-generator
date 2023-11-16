@@ -1,10 +1,10 @@
-# Project Title
+# f
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/licenses/Apache)
 
 ## Description
 
-This is a high-quality command-line application that generates a professional README.md file based on user input. It prompts users for information about their application repository and creates a well-structured README with different sections.
+undefined
 
 ## Table of Contents
 
@@ -17,35 +17,26 @@ This is a high-quality command-line application that generates a professional RE
 
 ## Installation
 
-To install this application, clone the repository and run the following command: 
-
+f
 
 ## Usage
 
-After installation, navigate to the project directory and run the application by executing:
-
-
-Follow the prompts to provide information about your project, and the README will be generated automatically.
+f
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file for details.
+    This project is licensed under the [Apache License](https://opensource.org/licenses/Apache).
 
 ## Contributing
 
-To contribute to this project, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md).
+f
 
 ## Tests
 
-To run tests, use the following command:
-
+f
 
 ## Questions
 
-If you have any questions, feel free to reach out:
-
-- GitHub: [YourGitHubUsername](https://github.com/YourGitHubUsername)
-- Email: [your-email@example.com](mailto:your-email@example.com)
-
-
-Amirah Bullock
+For any questions, please contact f:
+- Email: f
+- GitHub: [f](https://github.com/f)

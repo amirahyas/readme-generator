@@ -32,21 +32,11 @@ function renderLicenseSection(license) {
 }
 
 // Function to generate markdown for README
-async function generateMarkdown(data) {
-  const licensePrompt = await inquirer.prompt([
-    {
-      type: 'list',
-      name: 'license',
-      message: 'Choose a license:',
-      choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'BSD-3-Clause', 'None'],
-    },
-  ]);
+function generateMarkdown(data) {
 
-  
- const selectedLicense = licensePrompt.license;
   return `# ${data.title}
 
-${renderLicenseBadge(selectedLicense)}
+${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -69,7 +59,7 @@ ${data.installation}
 
 ${data.usage}
 
-${renderLicenseSection(selectedLicense)}
+${renderLicenseSection(data.license)}
 
 ## Contributing
 
@@ -81,7 +71,7 @@ ${data.tests}
 
 ## Questions
 
-For any questions, please contact ${data.name}:
+For any questions, please contact ${data.questions}:
 - Email: ${data.email}
 - GitHub: [${data.username}](https://github.com/${data.username})
 `;

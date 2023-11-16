@@ -66,7 +66,7 @@ function promptUser(){
         },
 
         {  type: "input",
-           name: "Git",
+           name: "username",
            message: "Github username:",
          validate: (value)=>{ if(value){return true} else {return 'I need a value to continue'}},
 
@@ -100,8 +100,8 @@ async function init() {
 
     console.log(readmeContent);
 
-    // Write new README.md to the 'dist' directory
-    await writeFileAsync("./Develop/dist/README.md", readmeContent);
+    //  Write new README.md to the 'dist' directory
+     await writeFileAsync("./Develop/dist/README.md", readmeContent);
     console.log("✔️  Successfully wrote to README.md");
 
   } catch (error) {
