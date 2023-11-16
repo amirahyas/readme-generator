@@ -1,10 +1,6 @@
-# f
+# the readme-generator project
 
-[![License](https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/licenses/Apache)
-
-## Description
-
-undefined
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
@@ -17,26 +13,26 @@ undefined
 
 ## Installation
 
-f
+use npm
 
 ## Usage
 
-f
+use this wisely
 
 ## License
 
-    This project is licensed under the [Apache License](https://opensource.org/licenses/Apache).
+    This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contributing
 
-f
+others can fork repo and create own code
 
 ## Tests
 
-f
+use testing unit with test
 
 ## Questions
 
-For any questions, please contact f:
-- Email: f
-- GitHub: [f](https://github.com/f)
+For any questions, please contact fix errors here:
+- Email: amirahyas23@gmail.com
+- GitHub: [amirahyas](https://github.com/amirahyas)
